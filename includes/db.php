@@ -6,16 +6,16 @@
 // Saturday, October 9, 2021
 
 // Local 
-$host = "127.0.0.1";
-$user = "root";
-$password = "root";
-$dbname = "secretsanta";
+// $host = "127.0.0.1";
+// $user = "root";
+// $password = "root";
+// $dbname = "secretsanta";
 
 // Dal
-// $host = 'db.cs.dal.ca';
-// $user = "dunnett";
-// $password = "KsJmMdF7Bn4Lqarbu6GMbsn5H";
-// $dbname = "dunnett";
+$host = 'db.cs.dal.ca';
+$user = "dunnett";
+$password = getenv("DB_PASS");
+$dbname = "dunnett";
 
 $dsn = "mysql:host=$host;dbname=$dbname";
 try {
